@@ -2,7 +2,7 @@
 Meta-Omics Dataset Curation Toolkit (**MTD Curation Toolkit**) is a suite of programs designed for the download and curation of metadata and fastq files of public meta-omics datasets. Centered on the European Nucleotide Archive (ENA), this workflow provides a standardized framework intended to facilitate the arduous task of curating public meta-omics projects.
 
 ## Getting started
-For further details see the following:
+For further details, see the following:
 * **Documentation** (https://github.com/tbcgit/mtdctk/wiki)
 * **Installation** (https://github.com/tbcgit/mtdctk/wiki/Installation)
 * **Tutorial Full Example** (https://github.com/tbcgit/mtdctk/wiki/Tutorial-Full-Example)
