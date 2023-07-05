@@ -1,0 +1,6 @@
+variable	filter_type	action	NA_treatment	values
+read_count	numerical	greater_equal	no	[10000]
+scientific_name	categorical	drop	no	[‘synthetic metagenome’]
+miseq_kit	numerical	equal	keep	[3]
+replicate	categorical	keep	keep	[’new’]
+tissue	categorical	drop	keep	[‘Brain’, ‘Heart’, ‘Muscle’]
