@@ -1,0 +1,16 @@
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/005/ERR1049915/ERR1049915_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/005/ERR1049915/ERR1049915_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/001/ERR1049851/ERR1049851_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/001/ERR1049851/ERR1049851_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/004/ERR1049854/ERR1049854_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/001/ERR1049861/ERR1049861_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/001/ERR1049861/ERR1049861_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/001/ERR1049921/ERR1049921_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/007/ERR1049927/ERR1049927_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/003/ERR1049853/ERR1049853_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/006/ERR1049856/ERR1049856_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/007/ERR1049857/ERR1049857_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/001/ERR1049911/ERR1049911_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/007/ERR1049917/ERR1049917_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/004/ERR1049924/ERR1049924_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR104/008/ERR1049928/ERR1049928_1.fastq.gz
