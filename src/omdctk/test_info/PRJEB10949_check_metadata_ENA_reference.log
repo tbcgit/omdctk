@@ -1,0 +1,198 @@
+
+################################################################
+##                                                            ##
+##    ___  __  __ ___      ___              _   _             ##
+##   / _ \|  \/  |   \    / __|  _ _ _ __ _| |_(_)___ _ _     ##
+##   |(_)|| |\/| | |) |   |(_| || | '_/ _` |  _| / _ \ ' \    ##
+##   \___/|_|  |_|___/    \___\_,_|_| \__,_|\__|_\___/_||_|   ##
+##                 _____         _ _   _ _                    ##
+##                |_   _|__  ___| | |_(_) |_                  ##
+##                  | |/ _ \/ _ \ | / / |  _|                 ##
+##                  |_|\___/\___/_|_\_\_|\__|                 ##
+##                                                            ##
+##   check_metadata_ENA.py                                    ##
+##    * v1 - 7 Jul 2023 *                                     ##
+##                                                            ##
+################################################################
+
+Program Parameters:
+┌─────────────────────┬────────────────────────────────┐
+│ Argument            │ Value                          │
+├─────────────────────┼────────────────────────────────┤
+│ metadata_table      │ PRJEB10949_merged_metadata.tsv │
+│ ena_download_column │ fastq_ftp                      │
+│ fastq_pattern       │ .fastq.gz                      │
+│ sample_column       │ sample_alias                   │
+│ extra_columns_stats │                                │
+│ plain_text          │ True                           │
+└─────────────────────┴────────────────────────────────┘
+
+Loading File:
+
+Metadata Table file:
+PRJEB10949_merged_metadata.tsv
+
+Runs' Stats:
+
+1) Number of run_accessions: 181
+
+2) Appearances per scientific_name(tax_id):
+                unique_values  counts
+          Mus musculus(10090)     112
+synthetic metagenome(1235509)      69
+
+3) Appearances per instrument_model(instrument_platform):
+           unique_values  counts
+Illumina MiSeq(ILLUMINA)     181
+
+4) Appearances per library_layout:
+unique_values  counts
+       PAIRED     181
+
+5) Appearances per library_strategy+library_source:
+       unique_values  counts
+AMPLICON+METAGENOMIC     181
+
+Runs' Checks:
+
+1) Check that library_layout and ENA Download Column match:
+ENA Download Column selected: fastq_ftp
+Fastq File Pattern provided: .fastq.gz
+- Total number of runs: 181
+- Total number of warning runs: 0
+
+All library_layouts for ENA Download Column match for all run_accessions!
+- All PAIRED run_accessions have only 2 associated Fastq files
+
+2) Check if original uploaded Fastqs are available:
+- Is submitted_ftp available? True
+- Is submitted_aspera available? True
+- Is submitted_galaxy available? True
+
+There are original submitted Fastqs columns available!
+
+3) Check if there are duplicated Fastq file names in the original uploaded Fastqs column:
+Using the following submitted Fastqs column: submitted_ftp
+No duplicates were detected!
+
+Sample Stats:
+
+1) Stats for "sample_accession":
+
+1.1) Number of unique samples for "sample_accession": 181
+
+1.2) Samples per scientific_name(tax_id) in "sample_accession":
+                       values  counts
+          Mus musculus(10090)     112
+synthetic metagenome(1235509)      69
+
+1.3) Samples per instrument_model(instrument_platform) in "sample_accession":
+                  values  counts
+Illumina MiSeq(ILLUMINA)     181
+
+1.4) Samples per library_layout in "sample_accession":
+values  counts
+PAIRED     181
+
+1.5) Samples per library_strategy+library_source in "sample_accession":
+              values  counts
+AMPLICON+METAGENOMIC     181
+
+1.6) Groups of samples in "sample_accession" by number of run_accessions:
+
+Group with  1  run_accession(s) per sample:
+- Total number of samples in this group: 181
+
+2) Stats for "sample_alias":
+
+2.1) Number of unique samples for "sample_alias": 181
+
+2.2) Samples per scientific_name(tax_id) in "sample_alias":
+                       values  counts
+          Mus musculus(10090)     112
+synthetic metagenome(1235509)      69
+
+2.3) Samples per instrument_model(instrument_platform) in "sample_alias":
+                  values  counts
+Illumina MiSeq(ILLUMINA)     181
+
+2.4) Samples per library_layout in "sample_alias":
+values  counts
+PAIRED     181
+
+2.5) Samples per library_strategy+library_source in "sample_alias":
+              values  counts
+AMPLICON+METAGENOMIC     181
+
+2.6) Groups of samples in "sample_alias" by number of run_accessions:
+
+Group with  1  run_accession(s) per sample:
+- Total number of samples in this group: 181
+
+Sample Checks:
+
+1) Does the number of run_accessions equal the number of samples?
+- Number of runs equals samples in "sample_accessions": True
+- Number of runs equals samples in "sample_alias": True
+
+2) Does the number of samples equal each other between "sample_accession" and "sample_alias"?
+- Number of samples in "sample_alias" equals samples in "sample_accession": True
+
+2.1) Check samples for "sample_accession":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_accession" have only one match with "sample_alias"!
+
+2.2) Check samples for "sample_alias":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_alias" have only one match with "sample_accession"!
+
+3) Is there more than one library_strategy+library_source per sample?
+
+3.1) Check samples for "sample_accession":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_accession" have only one match per "library_strategy+library_source"!
+
+3.2) Check samples for "sample_alias":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_alias" have only one match per "library_strategy+library_source"!
+
+4) Is there more than one scientific_name(tax_id) per sample?
+
+4.1) Check samples for "sample_accession":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_accession" have only one match per "scientific_name(tax_id)"!
+
+4.2) Check samples for "sample_alias":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_alias" have only one match per "scientific_name(tax_id)"!
+
+5) Is there more than one instrument_model(instrument_platform) per sample?
+
+5.1) Check samples for "sample_accession":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_accession" have only one match per "instrument_model(instrument_platform)"!
+
+5.2) Check samples for "sample_alias":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_alias" have only one match per "instrument_model(instrument_platform)"!
+
+6) Is there more than one library_layout per sample?
+
+6.1) Check samples for "sample_accession":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_accession" have only one type of library_layout!
+
+6.2) Check samples for "sample_alias":
+- Total number of samples: 181
+- Total number of warning samples: 0
+All samples in "sample_alias" have only one type of library_layout!
+

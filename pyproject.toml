@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omdctk"
+version = "1.0"
+authors = [
+  { name="Samuel Piquer Esteban", email="samuel.piquer@uv.es" },
+]
+description = "OMD Curation Toolkit"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Bio-Informatics'
+]
+dependencies = [
+    'aioftp', 'aiohttp', 'parfive',
+    'termcolor', 'tabulate', 'tqdm',
+    'mg-toolkit', 'pandas',
+]
+
+
+[project.urls]
+"GitHub" = "https://github.com/tbcgit/omdctk"
+"Documentation" = "https://github.com/tbcgit/omdctk/wiki"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ['src']
+namespaces = true
+
+[tool.setuptools.package-data]
+"omdctk.test_info" = ["*.log", "*.tsv"]
+
+[project.scripts]
+check_fastqs_ENA            = 'omdctk.check_fastqs_ENA:main'
+check_metadata_ENA          = 'omdctk.check_metadata_ENA:main'
+download_fastqs_ENA         = 'omdctk.download_fastqs_ENA:main'
+download_metadata_ENA       = 'omdctk.download_metadata_ENA:main'
+filter_metadata             = 'omdctk.filter_metadata:main'
+make_treatment_template_ENA = 'omdctk.make_treatment_template_ENA:main'
+merge_metadata              = 'omdctk.merge_metadata:main'
+test_omdctk                 = 'omdctk.test_omdctk:main'
+treat_fastqs                = 'omdctk.treat_fastqs:main'
+treat_metadata_ENA          = 'omdctk.treat_metadata_ENA:main'
