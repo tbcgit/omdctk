@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "omdctk"
-version = "1.0"
+version = "1.1.0"
 authors = [
   { name="Samuel Piquer Esteban", email="samuel.piquer@uv.es" },
 ]
@@ -37,16 +37,18 @@ where = ['src']
 namespaces = true
 
 [tool.setuptools.package-data]
-"omdctk.test_info" = ["*.log", "*.tsv"]
+"omdctk.test_info" = ["*.log", "*.tsv","*.txt"]
 
 [project.scripts]
-check_fastqs_ENA            = 'omdctk.check_fastqs_ENA:main'
+check_fastqs                = 'omdctk.check_fastqs:main'
 check_metadata_ENA          = 'omdctk.check_metadata_ENA:main'
-download_fastqs_ENA         = 'omdctk.download_fastqs_ENA:main'
+download_fastqs             = 'omdctk.download_fastqs:main'
 download_metadata_ENA       = 'omdctk.download_metadata_ENA:main'
 filter_metadata             = 'omdctk.filter_metadata:main'
-make_treatment_template_ENA = 'omdctk.make_treatment_template_ENA:main'
+make_treatment_template     = 'omdctk.make_treatment_template:main'
 merge_metadata              = 'omdctk.merge_metadata:main'
 test_omdctk                 = 'omdctk.test_omdctk:main'
 treat_fastqs                = 'omdctk.treat_fastqs:main'
-treat_metadata_ENA          = 'omdctk.treat_metadata_ENA:main'
+treat_metadata              = 'omdctk.treat_metadata:main'
+concat_datasets             = 'omdctk.concat_datasets:main'
+check_metadata_values       = 'omdctk.check_metadata_values:main'

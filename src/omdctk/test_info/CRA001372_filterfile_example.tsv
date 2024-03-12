@@ -1,0 +1,2 @@
+variable	filter_type	action	NA_treatment	values
+tissue	categorical	keep	no	[‘Soil’]

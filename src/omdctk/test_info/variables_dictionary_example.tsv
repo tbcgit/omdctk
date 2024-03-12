@@ -1,0 +1,18 @@
+variable	requiredness	class_type	uniqueness_within_variable	check_uniqueness_between_variables	variables_for_uniqueness_between	NAs_allowed	allowed_values_treatment	allowed_values
+final_files_sample_name	required	character	unique	no	none	no	any	any
+original_files_sample_names	required	character	unique	no	none	no	any	any
+treatment_fastq_type	required	character	nonunique	no	none	no	subset	"[""pair1;pair2"",""single""]"
+run_accession	required	character	unique	yes	[“final_files_sample_name”, “sample_accession”,”project_accession”]	no	any	any
+sample_accession	required	character	unique	yes	[“final_files_sample_name”,”project_accession”]	no	any	any
+project_accession	required	character	nonunique	no	none	no	any	any
+instrument_model	required	character	nonunique	no	none	no	any	any
+library_strategy	required	character	nonunique	no	none	no	wholeset	"[""AMPLICON""]"
+library_source	required	character	nonunique	no	none	no	wholeset	"[""METAGENOMIC""]"
+library_selection	required	character	nonunique	no	none	no	wholeset	"[""PCR""]"
+associated_host	required	character	nonunique	no	none	no	wholeset	"[""Oryza sativa"",""Mus musculus""]"
+tissue	required	character	nonunique	yes	[“associated_host”]	no	subset	"[""Ileum"",""Liver"",""Adipose tissue"",""Soil""]"
+replicate	optional	character	nonunique	no	none	yes	subset	"[""new""]"
+run_label	optional	character	nonunique	no	none	yes	any	any
+miseq_kit	optional	numeric	nonunique	no	none	yes	range	[0,3]
+isolation_source	optional	character	nonunique	no	none	yes	subset	[“root”]
+geographic_location	optional	character	nonunique	no	none	yes	any	any

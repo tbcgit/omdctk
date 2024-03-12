@@ -1,0 +1,331 @@
+
+################################################################
+##                                                            ##
+##    ___  __  __ ___      ___              _   _             ##
+##   / _ \|  \/  |   \    / __|  _ _ _ __ _| |_(_)___ _ _     ##
+##   |(_)|| |\/| | |) |   |(_| || | '_/ _` |  _| / _ \ ' \    ##
+##   \___/|_|  |_|___/    \___\_,_|_| \__,_|\__|_\___/_||_|   ##
+##                 _____         _ _   _ _                    ##
+##                |_   _|__  ___| | |_(_) |_                  ##
+##                  | |/ _ \/ _ \ | / / |  _|                 ##
+##                  |_|\___/\___/_|_\_\_|\__|                 ##
+##                                                            ##
+##   check_metadata_values.py                                 ##
+##    * v1.1.0 - ? Mar 2024 *                                 ##
+##                                                            ##
+################################################################
+
+Program Parameters:
+┌──────────────────────┬───────────────────────────────────────────────────────────────────────────────┐
+│ Argument             │ Value                                                                         │
+├──────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ metadata_table       │ /home/sapies/Desktop/Prueba_concat/po/example_concatenated_final_metadata.tsv │
+│ variables_dictionary │ /home/sapies/Desktop/Prueba_concat/po/variables_dictionary_example.tsv        │
+│ plain_text           │ True                                                                          │
+└──────────────────────┴───────────────────────────────────────────────────────────────────────────────┘
+
+Loading Files:
+
+Variables Dictionary file:
+/home/sapies/Desktop/Prueba_concat/po/variables_dictionary_example.tsv
+
+Curated Metadata Table file:
+/home/sapies/Desktop/Prueba_concat/po/example_concatenated_final_metadata.tsv
+
+Checking Provided Variables:
+
+Variable: final_files_sample_name
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: unique
+Okey! Indicated as unique and no duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for final_files_sample_name!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: no
+- Values Allowed: any
+Okey! NAs were not allowed and no NAs were detected!
+
+Variable: original_files_sample_names
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: unique
+Okey! Indicated as unique and no duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for original_files_sample_names!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: no
+- Values Allowed: any
+Okey! NAs were not allowed and no NAs were detected!
+
+Variable: treatment_fastq_type
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for treatment_fastq_type!
+5) Allowed Values:
+- Allowed Values Treatment: subset
+- NAs Allowed: no
+- Values Allowed: ['pair1;pair2', 'single']
+Okey! All values are allowed values!
+
+Variable: run_accession
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: unique
+Okey! Indicated as unique and no duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: yes
+- Variable to check: final_files_sample_name
+Okey! No duplicates were detected in variable run_accession thus each value has a unique match with the provided variable final_files_sample_name!
+- Variable to check: sample_accession
+Okey! No duplicates were detected in variable run_accession thus each value has a unique match with the provided variable sample_accession!
+- Variable to check: project_accession
+Okey! No duplicates were detected in variable run_accession thus each value has a unique match with the provided variable project_accession!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: no
+- Values Allowed: any
+Okey! NAs were not allowed and no NAs were detected!
+
+Variable: sample_accession
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: unique
+Okey! Indicated as unique and no duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: yes
+- Variable to check: final_files_sample_name
+Okey! No duplicates were detected in variable sample_accession thus each value has a unique match with the provided variable final_files_sample_name!
+- Variable to check: project_accession
+Okey! No duplicates were detected in variable sample_accession thus each value has a unique match with the provided variable project_accession!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: no
+- Values Allowed: any
+Okey! NAs were not allowed and no NAs were detected!
+
+Variable: project_accession
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for project_accession!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: no
+- Values Allowed: any
+Okey! NAs were not allowed and no NAs were detected!
+
+Variable: instrument_model
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for instrument_model!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: no
+- Values Allowed: any
+Okey! NAs were not allowed and no NAs were detected!
+
+Variable: library_strategy
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for library_strategy!
+5) Allowed Values:
+- Allowed Values Treatment: wholeset
+- NAs Allowed: no
+- Values Allowed: ['AMPLICON']
+Okey! All values in the provided allowed values are present and there are no extra values in the "library_strategy" column in the metadata table!
+
+Variable: library_source
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for library_source!
+5) Allowed Values:
+- Allowed Values Treatment: wholeset
+- NAs Allowed: no
+- Values Allowed: ['METAGENOMIC']
+Okey! All values in the provided allowed values are present and there are no extra values in the "library_source" column in the metadata table!
+
+Variable: library_selection
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for library_selection!
+5) Allowed Values:
+- Allowed Values Treatment: wholeset
+- NAs Allowed: no
+- Values Allowed: ['PCR']
+Okey! All values in the provided allowed values are present and there are no extra values in the "library_selection" column in the metadata table!
+
+Variable: associated_host
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for associated_host!
+5) Allowed Values:
+- Allowed Values Treatment: wholeset
+- NAs Allowed: no
+- Values Allowed: ['Oryza sativa', 'Mus musculus']
+Okey! All values in the provided allowed values are present and there are no extra values in the "associated_host" column in the metadata table!
+
+Variable: tissue
+1) Requiredness: required
+Okey! This required variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: yes
+- Variable to check: associated_host
+Okey! Duplicates were detected in variable tissue and each value has a unique match with the provided variable associated_host!
+5) Allowed Values:
+- Allowed Values Treatment: subset
+- NAs Allowed: no
+- Values Allowed: ['Ileum', 'Liver', 'Adipose tissue', 'Soil']
+Okey! All values are allowed values!
+
+Variable: replicate
+1) Requiredness: optional
+Okey! This optional variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for replicate!
+5) Allowed Values:
+- Allowed Values Treatment: subset
+- NAs Allowed: yes
+- Values Allowed: ['new']
+Okey! All values are allowed values or are NAs!
+
+Variable: run_label
+1) Requiredness: optional
+Okey! This optional variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for run_label!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: yes
+- Values Allowed: any
+Okey! Allowed values treatment "any" and NAs are allowed! Skipping check!
+
+Variable: miseq_kit
+1) Requiredness: optional
+Okey! This optional variable is in the provided Curated Metadata Table!
+2) Class Type: numeric
+Okey! Indicated as numeric and dtype is numeric!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for miseq_kit!
+5) Allowed Values:
+- Allowed Values Treatment: range
+- NAs Allowed: yes
+- Values Allowed[min,max]: [0, 3]
+Okey! All values are in the allowed numeric range or are NAs!
+
+Variable: isolation_source
+1) Requiredness: optional
+Okey! This optional variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for isolation_source!
+5) Allowed Values:
+- Allowed Values Treatment: subset
+- NAs Allowed: yes
+- Values Allowed: ['root']
+Okey! All values are allowed values or are NAs!
+
+Variable: geographic_location
+1) Requiredness: optional
+Okey! This optional variable is in the provided Curated Metadata Table!
+2) Class Type: character
+Okey! Indicated as character and dtype is Object or Bool!
+3) Uniqueness Within: nonunique
+Okey! Indicated as nonunique! Duplicates were found within variable!
+4) Uniqueness Between:
+Check Uniqueness Between variables: no
+- Variable to check: none
+Okey! Indicated as check no! Skipping check uniqueness between variables for geographic_location!
+5) Allowed Values:
+- Allowed Values Treatment: any
+- NAs Allowed: yes
+- Values Allowed: any
+Okey! Allowed values treatment "any" and NAs are allowed! Skipping check!
+

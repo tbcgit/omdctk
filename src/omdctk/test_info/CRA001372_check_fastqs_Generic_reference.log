@@ -1,0 +1,79 @@
+
+################################################################
+##                                                            ##
+##    ___  __  __ ___      ___              _   _             ##
+##   / _ \|  \/  |   \    / __|  _ _ _ __ _| |_(_)___ _ _     ##
+##   |(_)|| |\/| | |) |   |(_| || | '_/ _` |  _| / _ \ ' \    ##
+##   \___/|_|  |_|___/    \___\_,_|_| \__,_|\__|_\___/_||_|   ##
+##                 _____         _ _   _ _                    ##
+##                |_   _|__  ___| | |_(_) |_                  ##
+##                  | |/ _ \/ _ \ | / / |  _|                 ##
+##                  |_|\___/\___/_|_\_\_|\__|                 ##
+##                                                            ##
+##   check_fastqs.py                                          ##
+##    * v1.1.0 - ? Mar 2024 *                                 ##
+##                                                            ##
+################################################################
+
+Program Parameters:
+┌──────────────────────────┬─────────────────────────────────────────────────────┐
+│ Argument                 │ Value                                               │
+├──────────────────────────┼─────────────────────────────────────────────────────┤
+│ metadata_table           │ filtered_merged_CRA001372_main_metadata_example.tsv │
+│ fastqs_directory         │ downloads                                           │
+│ manifest_table           │ filtered_manifest_CRA001372_example.tsv             │
+│ mode                     │ Generic                                             │
+│ ena_download_column      │                                                     │
+│ generic_common_column_mt │ sample_id                                           │
+│ fastq_pattern            │ .fq.gz                                              │
+│ md5_check                │ True                                                │
+│ plain_text               │ True                                                │
+└──────────────────────────┴─────────────────────────────────────────────────────┘
+
+Loading Files:
+
+Metadata Table file:
+filtered_merged_CRA001372_main_metadata_example.tsv
+
+Manifest Table file:
+filtered_manifest_CRA001372_example.tsv
+
+Main Information:
+
+1) Number of rows in Metadata Table: 24
+
+2) Number of unique samples for provided generic_merge_column in Metadata Table: 24
+
+3) Number of Fastq files in the provided Manifest Table: 24
+
+4) Number of unique samples for "sample_name" column in Manifest Table: 24
+
+5) Number of Fastq files in the provided Fastqs Directory: 24
+
+Fastqs' Checks:
+
+1) Check that expected files from the Manifest Table exist in the provided directory:
+All the expected Fastq files from the Manifest Table are in the provided directory!
+
+2) Check if there are Fastq files of the provided directory absent in the Manifest Table:
+There are no extra Fastq files in the provided directory!
+
+3) Check if there are Fastq files of the provided directory with multiple matches in the Manifest Table:
+All Fastq files in the provided directory have a unique sample_name match with the Manifest Table!
+
+4) Check intersection between "sample_name" column from Manifest and provided generic_common_column_mt from Metadata:
+
+Unique values:
+  o Manifest Column [sample_name] (total unique values): 24
+  o Metadata Column [sample_id] (total unique values): 24
+
+All unique values are common between the columns provided!
+
+5) Check that expected MD5s from the Manifest Table match calculated MD5s:
+
+This may take a while...
+  o Total number of Fastqs detected in Manifest Table: 24
+  o Total number of warnings for MD5s: 0
+
+All MD5s present in the Manifest Table match the MD5s calculated for their corresponding Fastq files!
+

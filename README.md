@@ -1,5 +1,5 @@
 # OMD Curation Toolkit
-Omics Dataset Curation Toolkit (**OMD Curation Toolkit**) is a suite of programs designed for the download and curation of metadata and fastq files of public omics datasets. Centered on the European Nucleotide Archive (ENA), this workflow provides a standardized framework intended to facilitate the arduous task of curating public omics projects.
+Omics Dataset Curation Toolkit (**OMD Curation Toolkit**) is a suite of programs designed for the download and curation of metadata and fastq files of public omics datasets. This workflow provides a standardized framework intended to facilitate the arduous task of curating public omics projects. While centered on the European Nucleotide Archive (ENA), the majority of provided tools are generic and can be used to curate datasets from different sources.
 
 ## Getting started
 For further details, see the following:
