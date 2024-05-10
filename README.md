@@ -6,7 +6,9 @@ For further details, see the following:
 * **Documentation** (https://github.com/tbcgit/omdctk/wiki)
 * **Installation** (https://github.com/tbcgit/omdctk/wiki/Installation)
 * **Tutorial Full Example** (https://github.com/tbcgit/omdctk/wiki/Tutorial-Full-Example)
-  
+## Citation
+If you used OMD Curation Toolkit, please cite:
+Piquer-Esteban, S., Arnau, V., Diaz, W. et al. OMD Curation Toolkit: a workflow for in-house curation of public omics datasets. BMC Bioinformatics 25, 184 (2024). https://doi.org/10.1186/s12859-024-05803-9
 ## Acknowledgements
 This package has been jointly developed in the **Theory, Bioinformatics and Computation** (https://www.uv.es/tbc) and **Evolutionary Genetics** (https://www.uv.es/symbiosis) research groups at the **Institute for Integrative Systems Biology (I2SysBio)**, University of Valencia and Consejo Superior de Investigaciones Científicas (CSIC), Valencia, Spain. SPE is supported by an FPU grant from the Spanish Ministry of Universities (Reference: FPU20/05756).
 
